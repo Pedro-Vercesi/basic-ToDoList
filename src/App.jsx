@@ -56,16 +56,18 @@ function App() {
   };
 
   return (
-    <div className="main-container">
+    <>
       <h1>To-Do List</h1>
-      <Input input={input} handleInput={handleInput} addTask={addTask} />
-      <List
-        tasks={tasks}
-        deleteTask={deleteTask}
-        moveTask={moveTask}
-        toggleComplete={toggleComplete}
-      />
-    </div>
+      <div className="main-container">
+        <Input input={input} handleInput={handleInput} addTask={addTask} />
+        <List
+          tasks={tasks}
+          deleteTask={deleteTask}
+          moveTask={moveTask}
+          toggleComplete={toggleComplete}
+        />
+      </div>
+    </>
   );
 }
 
