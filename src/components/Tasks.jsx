@@ -10,7 +10,7 @@ const Tasks = ({ task, deleteTask, moveTask, toggleComplete }) => {
       <button
         onClick={() => toggleComplete(task.id)}
         disabled={task.completed}
-        className="btn btn-list btn-completed"
+        className={`btn btn-list ${task.completed ? "btn-completed" : ""}`}
       >
         <i className="fa-solid fa-check"></i>
       </button>
