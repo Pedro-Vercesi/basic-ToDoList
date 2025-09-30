@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+:root {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "nunito", sans-serif;
+  background: linear-gradient(135deg, #f2f2f2, #dcdcdc);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 0.2s ease;
+}
+
+.main-container {
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  padding: 3rem 6rem;
+}
+
+h1 {
+  font-size: 4rem;
+  color: black;
+}
+
+.input-container {
+  margin-top: 0.8rem;
+  display: flex;
+  gap: 0.8rem;
+}
+
+.input {
+  font-size: 1.6rem;
+  padding: 1rem;
+  border: 0.5px solid #00a6dd;
+  border-radius: 5px;
+  color: #3b3b3b;
+}
+
+.btn-input {
+  color: white;
+  font-size: 1.7rem;
+  padding: 1rem 1rem;
+  background-color: #45d1ff;
+  transition: background-color 0.5s ease;
+}
+
+.btn-input:hover {
+  background-color: #00bfff;
+}
+
+.list-container {
+  list-style: none;
+  margin-top: 2rem;
+  font-size: 2.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.list-container li {
+  background-color: #f1f1f1;
+  padding: 0.5rem 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1.5rem;
+}
+
+.task {
+  background-color: #f1f1f1;
+  flex: 1;
+}
+
+.btn-list {
+  font-size: 2.2rem;
+}
+
+.btn-list:hover {
+  transform: scale(1.1);
+}
+
+.fa-solid.fa-xmark {
+  color: red;
+  font-size: 3.2rem;
+}
+
+.fa-solid.fa-up-long {
+  color: #00bfff;
+  font-size: 3rem;
+}
+
+.fa-solid.fa-down-long {
+  color: #00bfff;
+  font-size: 3rem;
+}
+
+.fa-solid.fa-check {
+  color: rgb(0, 249, 0);
+  font-size: 3rem;
+}
+
+.btn-completed:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.task.completed {
+  text-decoration: line-through;
+  color: #999;
+}

@@ -1,0 +1,51 @@
+➡️ Primera etapa, Crear MVP → ToDo List con funciones de crear, borrar y cambiar el orden de una tarea.
+Crear estados (en App)
+
+tasks : array de tareas → default : [ ] (comenzar con 3 task para probar)
+input : control del input del usuario → default (“ ”)
+
+Crear Funciones 
+
+función para manejar el input → handleInput
+función para agregar task → addTask
+función para borrar task → deleteTask
+función para subir o bajar task en la lista → moveTask 
+3) trabajar en el return con el HTML y conectar las funciones necesarias
+
+Contenedor principal
+h1
+contenedor de input
+input
+botón add task
+ordered list → mapear el array de tasks
+span → task
+botón borrar
+botón subir task
+botón bajar task 
+4) Crear el CSS
+
+Fuente nunito
+Body display flex con el contenedor principal centrado 
+Cada li con un reborde gris claro
+5) Completar las funciones
+
+recordar que el input se maneja con el estado value - (recibe evento - value) 
+usar prev y spread para actualizar [ ] - validar task: no string vacío (trim) - Reset estado input
+para borrar usar filter - (recibe index de la task)
+validar si el index es mayor a 0, si no, no se puede mover más arriba - crear nuevo array updatedTask - hacer swap - (recibe index de la task y parámetro up o down)
+
+
+6) Refactorizar en componentes 
+
+App → renderiza los componentes :
+Input
+Lista
+7) crear querys para responsive 
+➡️ Segunda Etapa → Crear local storage
+➡️ Tercera Etapa → Refactorizar y transformar cada task en un objeto.
+👉 El objeto de cada tarea podría contender un id, el título y una fecha de creación.
+➡️ Posible cuarta etapa futura
+
+Marcar tareas como completadas (checkbox).
+
+Filtrar (todas, completadas, pendientes).
